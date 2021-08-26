@@ -1,6 +1,6 @@
-require('dotenv').config()
-const { Builder, By, Key, until } = require('selenium-webdriver')
-require('chromedriver')
+require('dotenv').config();
+require('chromedriver');
+const { Builder, By, Key, until } = require('selenium-webdriver');
 
 (async function myFunction() {
 	let driver = await new Builder().forBrowser('chrome').build()
